@@ -1,0 +1,17 @@
+{{- $link := .Get 0 -}}
+{{- $display := .Get 1 | default $link -}}
+{{- $target := "" -}}
+
+{{- range .Site.RegularPages -}}
+  {{- $filename := path.Base .File.Path -}}
+  {{- $filenameNoExt := strings.TrimSuffix ".md" $filename -}}
+  {{- if or (eq .Title $link) (eq $filenameNoExt $link) -}}
+    {{- $target = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $target -}}
+<a href="{{ $target }}" class="wikilink">{{ $display }}</a>
+{{- else -}}
+<span class="wikilink wikilink-broken" title="Page not found">{{ $display }}</span>
+{{- end -}}
