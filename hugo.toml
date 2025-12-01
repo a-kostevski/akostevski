@@ -1,7 +1,7 @@
 baseURL = 'https://a-kostevski.github.io/akostevski/'
 languageCode = 'en-us'
 title = 'Anton Kostevski'
-theme = 'PaperMod'
+theme = 'flavor'
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -22,6 +22,13 @@ pygmentsUseClasses = true
   ShowToc = true
   TocOpen = false
   comments = false
+  # Flavor theme params
+  showBacklinks = true
+  showGraph = true
+
+  [params.graph]
+    enabled = true
+    height = "24rem"
 
   [params.homeInfoParams]
     Title = "Anton Kostevski"

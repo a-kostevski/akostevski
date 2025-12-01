@@ -11,7 +11,7 @@
 {{- end -}}
 
 {{- if $target -}}
-<a href="{{ $target }}" class="wikilink">{{ $display }}</a>
+<a href="{{ $target }}" class="wikilink text-blue-600 dark:text-blue-400 hover:underline">{{ $display }}</a>
 {{- else -}}
-<span class="wikilink wikilink-broken" title="Page not found">{{ $display }}</span>
+<span class="wikilink wikilink-broken text-gray-400 dark:text-gray-600 line-through cursor-not-allowed" title="Page not found">{{ $display }}</span>
 {{- end -}}

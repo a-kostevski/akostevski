@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    counter-reset: sidenote;
+  }
+
+  /* Better focus styles */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-blue-500;
+  }
+
+  /* Smooth transitions for color scheme */
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  /* Admonition styles */
+  .admonition {
+    @apply rounded-lg p-4 mb-4 border-l-4;
+  }
+
+  .admonition figcaption {
+    @apply flex items-center gap-2 font-semibold mb-2;
+  }
+
+  /* Sidenote styles */
+  .sidenote-mark {
+    @apply cursor-pointer;
+  }
+
+  .sidenote-mark:hover {
+    @apply underline;
+  }
+
+  /* Table of Contents styling */
+  .toc {
+    @apply text-sm;
+  }
+
+  .toc ul {
+    @apply list-none pl-4;
+  }
+
+  .toc li {
+    @apply py-1;
+  }
+
+  .toc a {
+    @apply text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400;
+  }
+
+  /* Line clamp utility for summaries */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Code block enhancements */
+  .highlight {
+    @apply relative rounded-lg overflow-hidden;
+  }
+
+  .highlight pre {
+    @apply p-4 overflow-x-auto text-sm;
+  }
+
+  /* Pagination styling */
+  .pagination {
+    @apply flex items-center justify-center gap-2 mt-8;
+  }
+
+  .pagination .page-item {
+    @apply px-3 py-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800;
+  }
+
+  .pagination .page-item.active {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+
+  .pagination .page-item.disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+}
+
+@layer utilities {
+  /* Screen reader only utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}

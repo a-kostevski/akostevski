@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="space-y-12">
+  {{- /* Hero / Welcome section */ -}}
+  <section class="py-8">
+    {{ with .Site.Params.homeInfoParams }}
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ .Title }}</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-300">{{ .Content }}</p>
+    {{ end }}
+  </section>
+
+  {{- /* Content Graph */ -}}
+  {{ if .Site.Params.showGraph }}
+  <section>
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Content Graph</h2>
+    {{ partial "graph.html" . }}
+  </section>
+  {{ end }}
+
+  {{- /* Recent Posts */ -}}
+  <section>
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Recent Posts</h2>
+    <div class="space-y-4">
+      {{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+      <article class="group">
+        <a href="{{ .Permalink }}" class="block p-4 -mx-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="flex items-center gap-3">
+              <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded capitalize">{{ .Section }}</span>
+              <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                {{ .Title }}
+              </h3>
+            </div>
+            {{ if .Date }}
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-sm text-gray-500 dark:text-gray-400 shrink-0">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            {{ end }}
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}
