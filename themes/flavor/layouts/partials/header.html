@@ -18,6 +18,10 @@
       </a>
       {{ end }}
 
+      {{- /* Language switcher (temporarily hidden)
+      {{ partial "language-switcher.html" . }}
+      */ -}}
+
       {{- /* Dark mode toggle */ -}}
       <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
         <span class="dark:hidden">{{ partial "svg/moon.html" }}</span>

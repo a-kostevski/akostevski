@@ -1,7 +1,22 @@
 baseURL = 'https://a-kostevski.github.io/akostevski/'
-languageCode = 'en-us'
-title = 'Anton Kostevski'
 theme = 'flavor'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    languageCode = 'en-US'
+    languageName = 'English'
+    weight = 1
+    title = 'Anton Kostevski'
+
+  [languages.sv]
+    contentDir = 'content/sv'
+    languageCode = 'sv-SE'
+    languageName = 'Svenska'
+    weight = 2
+    title = 'Anton Kostevski'
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -33,6 +48,12 @@ pygmentsUseClasses = true
   [params.homeInfoParams]
     Title = "Anton Kostevski"
     Content = "Tech articles, learning notes, and homelab documentation."
+
+[languages.en.params]
+  description = "Tech articles, learning notes, and homelab documentation."
+
+[languages.sv.params]
+  description = "Tekniska artiklar, anteckningar och hemmalabb-dokumentation."
 
   [[params.socialIcons]]
     name = "github"
@@ -75,38 +96,76 @@ pygmentsUseClasses = true
   disableXML = true
   minifyOutput = true
 
-[[menu.main]]
+# English menus
+[[languages.en.menus.main]]
   identifier = "projects"
   name = "Projects"
   url = "/projects/"
   weight = 10
 
-[[menu.main]]
+[[languages.en.menus.main]]
   identifier = "articles"
   name = "Articles"
   url = "/articles/"
   weight = 20
 
-[[menu.main]]
+[[languages.en.menus.main]]
   identifier = "notes"
   name = "Notes"
   url = "/notes/"
   weight = 30
 
-[[menu.main]]
+[[languages.en.menus.main]]
   identifier = "homelab"
   name = "Homelab"
   url = "/homelab/"
   weight = 40
 
-[[menu.main]]
+[[languages.en.menus.main]]
   identifier = "about"
   name = "About"
   url = "/about/"
   weight = 50
 
-[[menu.main]]
+[[languages.en.menus.main]]
   identifier = "search"
   name = "Search"
+  url = "/search/"
+  weight = 60
+
+# Swedish menus
+[[languages.sv.menus.main]]
+  identifier = "projects"
+  name = "Projekt"
+  url = "/projects/"
+  weight = 10
+
+[[languages.sv.menus.main]]
+  identifier = "articles"
+  name = "Artiklar"
+  url = "/articles/"
+  weight = 20
+
+[[languages.sv.menus.main]]
+  identifier = "notes"
+  name = "Anteckningar"
+  url = "/notes/"
+  weight = 30
+
+[[languages.sv.menus.main]]
+  identifier = "homelab"
+  name = "Hemmalabb"
+  url = "/homelab/"
+  weight = 40
+
+[[languages.sv.menus.main]]
+  identifier = "about"
+  name = "Om"
+  url = "/about/"
+  weight = 50
+
+[[languages.sv.menus.main]]
+  identifier = "search"
+  name = "Sök"
   url = "/search/"
   weight = 60

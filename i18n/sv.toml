@@ -1,0 +1,27 @@
+[home]
+other = "Hem"
+
+[readingTime]
+one = "1 min läsning"
+other = "{{ .Count }} min läsning"
+
+[tableOfContents]
+other = "Innehållsförteckning"
+
+[onThisPage]
+other = "På denna sida"
+
+[backlinks]
+other = "Bakåtlänkar"
+
+[previous]
+other = "Föregående"
+
+[next]
+other = "Nästa"
+
+[search]
+other = "Sök"
+
+[noResults]
+other = "Inga resultat hittades"

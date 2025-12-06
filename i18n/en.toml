@@ -1,0 +1,27 @@
+[home]
+other = "Home"
+
+[readingTime]
+one = "1 min read"
+other = "{{ .Count }} min read"
+
+[tableOfContents]
+other = "Table of Contents"
+
+[onThisPage]
+other = "On this page"
+
+[backlinks]
+other = "Backlinks"
+
+[previous]
+other = "Previous"
+
+[next]
+other = "Next"
+
+[search]
+other = "Search"
+
+[noResults]
+other = "No results found"

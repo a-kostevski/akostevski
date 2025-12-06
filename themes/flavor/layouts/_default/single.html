@@ -6,7 +6,7 @@
       {{- /* Breadcrumbs */ -}}
       {{ if .Site.Params.ShowBreadCrumbs }}
       <nav class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-        <a href="{{ .Site.BaseURL }}" class="hover:text-gray-700 dark:hover:text-gray-200">Home</a>
+        <a href="{{ .Site.BaseURL }}" class="hover:text-gray-700 dark:hover:text-gray-200">{{ i18n "home" }}</a>
         {{ range .Ancestors.Reverse }}
         <span class="mx-2">/</span>
         <a href="{{ .Permalink }}" class="hover:text-gray-700 dark:hover:text-gray-200">{{ .Title }}</a>
@@ -26,7 +26,7 @@
 
         {{ if .Site.Params.ShowReadingTime }}
         <span>&middot;</span>
-        <span>{{ .ReadingTime }} min read</span>
+        <span>{{ i18n "readingTime" .ReadingTime }}</span>
         {{ end }}
 
         {{ with .Params.tags }}
@@ -43,7 +43,7 @@
     {{- /* Mobile Table of Contents - visible only on smaller screens */ -}}
     {{ if and .Site.Params.ShowToc .TableOfContents }}
     <details class="lg:hidden not-prose mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg" {{ if .Site.Params.TocOpen }}open{{ end }}>
-      <summary class="cursor-pointer font-semibold text-gray-900 dark:text-white">Table of Contents</summary>
+      <summary class="cursor-pointer font-semibold text-gray-900 dark:text-white">{{ i18n "tableOfContents" }}</summary>
       <nav class="mt-4 text-sm toc">
         {{ .TableOfContents }}
       </nav>
@@ -63,7 +63,7 @@
     <nav class="not-prose mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 flex justify-between">
       {{ with .PrevInSection }}
       <a href="{{ .Permalink }}" class="group flex flex-col items-start">
-        <span class="text-sm text-gray-500 dark:text-gray-400">Previous</span>
+        <span class="text-sm text-gray-500 dark:text-gray-400">{{ i18n "previous" }}</span>
         <span class="text-blue-600 dark:text-blue-400 group-hover:underline">{{ .Title }}</span>
       </a>
       {{ else }}
@@ -72,7 +72,7 @@
 
       {{ with .NextInSection }}
       <a href="{{ .Permalink }}" class="group flex flex-col items-end text-right">
-        <span class="text-sm text-gray-500 dark:text-gray-400">Next</span>
+        <span class="text-sm text-gray-500 dark:text-gray-400">{{ i18n "next" }}</span>
         <span class="text-blue-600 dark:text-blue-400 group-hover:underline">{{ .Title }}</span>
       </a>
       {{ end }}
@@ -85,7 +85,7 @@
   <aside class="hidden lg:block">
     <div class="toc-sidebar sticky top-8">
       <h2 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
-        On this page
+        {{ i18n "onThisPage" }}
       </h2>
       <nav class="toc">
         {{ .TableOfContents }}
