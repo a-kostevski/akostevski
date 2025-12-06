@@ -52,7 +52,11 @@
   }
 
   .toc ul {
-    @apply list-none pl-4;
+    @apply list-none pl-0;
+  }
+
+  .toc > ul > li > ul {
+    @apply pl-4;
   }
 
   .toc li {
@@ -60,7 +64,38 @@
   }
 
   .toc a {
-    @apply text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400;
+    @apply text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors;
+  }
+
+  .toc a.active {
+    @apply text-blue-600 dark:text-blue-400 font-medium;
+  }
+
+  /* Article layout with ToC sidebar */
+  .article-with-toc {
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    .article-with-toc {
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      gap: 3rem;
+    }
+  }
+
+  /* Sticky ToC sidebar */
+  .toc-sidebar {
+    @apply max-h-[calc(100vh-6rem)] overflow-y-auto pr-2;
+    scrollbar-width: thin;
+  }
+
+  .toc-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-600 rounded;
   }
 
   /* Line clamp utilities */

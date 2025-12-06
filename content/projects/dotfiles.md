@@ -10,6 +10,7 @@ tech:
 category: "Configuration"
 github: "https://github.com/a-kostevski/dotfiles"
 status: "active"
+draft: true
 ---
 
 ## Overview

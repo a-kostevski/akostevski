@@ -1,25 +1,9 @@
-{{- /* Dark mode toggle */ -}}
-<script>
-  const themeToggle = document.getElementById('theme-toggle');
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  }
-
-  // Mobile menu toggle
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('hidden');
-      navMenu.classList.toggle('flex');
-      navMenu.classList.toggle('flex-col');
-      navMenu.classList.toggle('mt-4');
-    });
-  }
-</script>
+{{- /* Main scripts via Hugo Pipes */ -}}
+{{ $js := resources.Get "js/main.js" }}
+{{ if hugo.IsProduction }}
+  {{ $js = $js | minify | fingerprint }}
+{{ end }}
+<script src="{{ $js.RelPermalink }}" defer></script>
 
 {{- /* Code copy button */ -}}
 {{ if .Site.Params.ShowCodeCopyButtons }}
