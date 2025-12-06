@@ -1,0 +1,3 @@
+[submodule "themes/flavor"]
+	path = themes/flavor
+	url = https://github.com/a-kostevski/flavor.git
