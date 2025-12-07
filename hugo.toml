@@ -1,4 +1,4 @@
-baseURL = 'https://a-kostevski.github.io/akostevski/'
+baseURL = 'https://a-kostevski.github.io/'
 theme = 'flavor'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
