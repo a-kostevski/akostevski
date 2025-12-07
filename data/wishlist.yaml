@@ -1,0 +1,282 @@
+categories:
+  - id: esp32
+    intro_en: "I want to build a Bluetooth receiver for my smart scale so it talks to Home Assistant instead of some Chinese cloud. Pretty cheap project:"
+    intro_sv: "Jag vill bygga en Bluetooth-mottagare till min smarta våg så att den pratar med Home Assistant istället för något kinesiskt moln. Rätt billigt projekt:"
+    items:
+      - name: Seeed XIAO ESP32-C3
+        url: https://www.electrokit.com/xiao-esp32c3
+        price: 100
+        desc_en: Cheap and does what it should
+        desc_sv: Billigt och gör det den ska
+
+      - name: ESP32-S3 DevKitC
+        url: https://www.electrokit.com/esp32-s3-devkitc-1-u-n8r2
+        price: 200
+        desc_en: A bit more expensive and does a bit more
+        desc_sv: Lite dyrare och gör lite mer
+
+      - name: Arduino Nano ESP32
+        url: https://www.electrokit.com/arduino-nano-esp32-with-headers
+        desc_en: Most expensive but plenty of room for experimentation
+        desc_sv: Dyrast och ger gott om utrymme för hopp och lek
+        extra_url: https://www.digikey.se/sv/products/detail/olimex-ltd/ESP32-POE/10258717
+
+  - id: smarthome
+    intro_en: "I have Home Assistant running with a SkyConnect dongle (Zigbee/Thread) but not many devices actually using it yet."
+    intro_sv: "Jag har Home Assistant igång med en SkyConnect-dongel (Zigbee/Thread) men inte så många enheter som faktiskt använder det än."
+    subsections:
+      - id: sensors
+        items:
+          - name: Aqara door/window sensor
+            name_sv: Aqara dörr/fönstersensor
+            url: https://www.kjell.com/se/produkter/smarta-hem/xiaomi-mi-smart-home/sensorer/aqara-dorr-och-fonstersensor-p51520
+            price: 150
+            quantity: 3
+            desc_en: Did I really close the door and windows?
+            desc_sv: Stängde jag verkligen dörren och fönstren där hemma?
+
+          - name: Aqara motion sensor P1
+            name_sv: Aqara rörelsesensor P1
+            url: https://www.kjell.com/se/varumarken/aqara
+            price: 200
+            desc_en: Zigbee 3.0 motion detector
+            desc_sv: Zigbee 3.0 rörelsedetektor
+
+          - name: Aqara water leak sensor
+            name_sv: Aqara vattenläckagesensor
+            url: https://www.kjell.com/se/produkter/sakerhet-overvakning/vattenlarm/aqara-t1-lackagedetektor-p57866
+            price: 240
+            quantity: 2
+            desc_en: One under the dishwasher and one under the sink
+            desc_sv: En under diskmaskinen och en under vasken
+
+          - name: Frient Smart Energy Meter
+            name_sv: Frient Smart Energimätare
+            url: https://www.kjell.com/se/produkter/smarta-hem/smarta-sensorer/smarta-energimatare/frient-smart-energimatare-for-elcentral-p52023
+            price: 700
+            desc_en: Track electricity consumption
+            desc_sv: Få koll på elförbrukning
+
+          - name: Aqara Thermometer & Hygrometer
+            name_sv: Aqara Termometer & Hygrometer
+            url: https://www.kjell.com/se/produkter/smarta-hem/smarta-hem-losningar/aqara-smarta-hem/aqara-t1-termometer-och-hygrometer-p57864
+            price: 230
+            desc_en: How else would you know the indoor temperature?
+            desc_sv: Hur ska man annars veta hur varmt det är inomhus?
+
+          - name: Athom Smart Plugs
+            url: https://www.athom.tech/blank-1/tasmota-esp32-c3-eu-plug-v3
+            desc_en: Smart plugs with Tasmota
+            desc_sv: Smarta uttag
+
+      - id: switches
+        items:
+          - name: Shelly Plus 1 Mini
+            url: https://www.kjell.com/se/produkter/smarta-hem/shelly/shelly-plus-1-mini-gen-3-p51900
+            price: 200
+            desc_en: Fits behind existing switches, WiFi based so no hub needed
+            desc_sv: Passar bakom befintliga strömbrytare, WiFi-baserad så ingen hubb behövs
+
+          - name: Aqara FP2
+            url: https://www.kjell.com/se/produkter/smarta-hem/smarta-hem-losningar/aqara-smarta-hem/aqara-presence-sensor-fp2-narvarosensor-p65051
+            price: 1200
+            desc_en: mmWave presence sensor, knows if someone's in the room even if sitting still
+            desc_sv: mmWave närvarosensor, vet om någon är i rummet även om de sitter stilla
+
+          - name: Everything Presence One
+            url: https://shop.everythingsmart.io/products/everything-presence-one-kit
+            price: 500
+            desc_en: Similar to FP2 but more hackable, runs ESPHome
+            desc_sv: Liknande FP2 men mer hackbar, kör ESPHome
+
+  - id: homelab
+    subsections:
+      - id: power
+        items:
+          - name: APC Back-UPS 650VA
+            url: https://www.komplett.se/product/1177245/datorutrustning/ups-stromfilter/ups/apc-back-ups-650va
+            price: 1200
+            desc_en: The router and switch really should be on battery backup
+            desc_sv: Routern och switchen borde verkligen vara på batteribackup
+
+          - name: APC Back-UPS 1600VA
+            url: https://www.komplett.se/search?q=apc+1600va
+            price: 2500
+            desc_en: If you want to cover the servers too
+            desc_sv: Om du vill täcka servrarna också
+
+          - name: Eaton 5E 850i
+            url: https://www.dustinhome.se/search?query=eaton+5e+850
+            price: 1000
+            desc_en: Alternative to APC, similar specs
+            desc_sv: Alternativ till APC, liknande specifikationer
+
+  - id: security
+    intro_en: "For learning and labbing. **Adult toys:**"
+    intro_sv: "**Vuxenleksaker:**"
+    items:
+      - name: YubiKey 5 NFC
+        url: https://www.kjell.com/se/varumarken/yubico/dator/datortillbehor/sakerhetsnycklar/yubico-yubikey-5c-nfc-sakerhetsnyckel-med-usb-c-p65607
+        price: 900
+        desc_en: Hardware security key, works for SSH, GPG, and 2FA
+        desc_sv: Hårdvarusäkerhetsnyckel, fungerar för SSH, GPG och 2FA
+
+      - name: Flipper Zero
+        url: https://shop.flipperzero.one/products/flipper-zero
+        price: 2500
+        desc_en: Fun for learning about RFID, NFC, IR, sub-GHz radio
+        desc_sv: Kul för att lära sig om RFID, NFC, IR, sub-GHz radio
+
+      - name: WiFi Pineapple
+        url: https://shop.hak5.org/products/wifi-pineapple
+        price: 1500
+        vendor: Hak5
+        desc_en: Dedicated rogue AP platform, overkill but cool
+        desc_sv: Dedikerad rogue AP-plattform, overkill men cool
+
+      - name: USB Rubber Ducky
+        url: https://shop.hak5.org/products/usb-rubber-ducky?variant=353378649
+        price: 500
+        vendor: Hak5
+        desc_en: Looks like a USB drive, types payloads
+        desc_sv: Ser ut som ett USB-minne, skriver payloads
+
+      - name: Proxmark3 Easy
+        url: https://www.amazon.se/dp/B09LYGMD4B
+        price: 600
+        desc_en: RFID/NFC cloner and analyzer, way more capable than Flipper
+        desc_sv: RFID/NFC-klonare och analysator, mycket mer kapabel än Flipper
+
+      - name: HackRF One
+        url: https://www.amazon.se/dp/B01JMQEKEG
+        price: 2500
+        desc_en: SDR covering 1 MHz to 6 GHz, transmit and receive
+        desc_sv: SDR som täcker 1 MHz till 6 GHz, sända och ta emot
+
+      - name: RTL-SDR v4
+        url: https://www.amazon.se/dp/B0CD7558GT
+        price: 400
+        desc_en: Cheaper receive-only SDR, good for learning
+        desc_sv: Billigare mottagnings-SDR, bra för att lära sig
+
+      - name: LAN Turtle
+        url: https://shop.hak5.org/products/lan-turtle
+        price: 700
+        vendor: Hak5
+        desc_en: Covert ethernet implant for pentesting
+        desc_sv: Dolt ethernet-implantat för pentesting
+
+      - name: Throwing Star LAN Tap
+        url: https://shop.hak5.org/products/throwing-star-lan-tap
+        price: 200
+        desc_en: Passive network tap for packet capture
+        desc_sv: Passiv nätverks-tap för paketfångst
+
+  - id: reading
+    items:
+      - name: Kobo Clara BW
+        url: https://www.elgiganten.se/product/mobiler-tablets-smartklockor/lasplatta/kobo-clara-bw-lasplatta-16gb-svart/767065
+        price: 2000
+        featured: true
+        desc_en: Works with Calibre, no Amazon lock-in. This is what I actually want.
+        desc_sv: Fungerar med Calibre.
+
+    subsections:
+      - id: learning
+        items:
+          - name: TryHackMe Premium
+            url: https://tryhackme.com/
+            price: 800
+            recurring: year
+            desc_en: Guided rooms, good for learning
+            desc_sv: Guidade rum, bra för att lära sig
+
+          - name: Hack The Box VIP
+            url: https://www.hackthebox.com/
+            price: 1000
+            recurring: year
+            desc_en: More CTF-style, harder boxes
+            desc_sv: Mer CTF-stil, svårare boxar
+
+          - name: PentesterLab Pro
+            url: https://pentesterlab.com/
+            price: 900
+            recurring: year
+            desc_en: Hands-on web security exercises
+            desc_sv: Praktiska webbsäkerhetsövningar
+
+          - name: OffSec Learn One
+            url: https://www.offsec.com/courses/learn-one/
+            price: 15000
+            recurring: year
+            desc_en: Expensive but includes OSCP prep
+            desc_sv: Dyrt men inkluderar OSCP-förberedelse
+
+retailers_intro_en: "Most of this stuff is available at:"
+retailers_intro_sv: "Det mesta av detta finns hos:"
+
+retailers:
+  - name: Kjell & Company
+    url: https://www.kjell.com/se
+    desc_en: Smart home, cables, ESP32 stuff
+    desc_sv: Smarta hem, kablar, ESP32-grejer
+
+  - name: Inet
+    url: https://www.inet.se/
+    desc_en: Tech, networking, storage, cases
+    desc_sv: Teknik, nätverk, lagring, chassin
+
+  - name: Webhallen
+    url: https://www.webhallen.com/
+    desc_en: Gaming, electronics
+    desc_sv: Gaming, elektronik
+
+  - name: Komplett
+    url: https://www.komplett.se/
+    desc_en: General tech, UPS
+    desc_sv: Allmän teknik, UPS
+
+  - name: Amazon.se
+    url: https://www.amazon.se/
+    desc_en: When nowhere else has it
+    desc_sv: När ingen annan har det
+
+  - name: Electrokit
+    url: https://www.electrokit.com/
+    desc_en: Electronics components
+    desc_sv: Elektronikkomponenter
+
+  - name: Dustin Home
+    url: https://www.dustinhome.se/
+    desc_en: YubiKeys, business stuff
+    desc_sv: YubiKeys, företagsgrejer
+
+  - name: Adlibris
+    url: https://www.adlibris.com/se
+    desc_en: Books
+    desc_sv: Böcker
+
+  - name: Cykelkraft
+    url: https://www.cykelkraft.se/
+    desc_en: Bike stuff
+    desc_sv: Cykelgrejer
+
+  - name: Hak5
+    url: https://shop.hak5.org/
+    desc_en: Security hardware (ships from US)
+    desc_sv: Säkerhetshårdvara (skickas från USA)
+
+  - name: IKEA
+    url: https://www.ikea.com/se/sv/
+    desc_en: Surprisingly good for cheap Zigbee stuff
+    desc_sv: Förvånansvärt bra för billiga Zigbee-grejer
+
+  - name: Tradera
+    url: https://www.tradera.com/
+    desc_en: Used hardware
+    desc_sv: Begagnad hårdvara
+
+  - name: Blocket
+    url: https://www.blocket.se/
+    desc_en: Used hardware
+    desc_sv: Begagnad hårdvara

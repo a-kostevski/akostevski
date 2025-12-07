@@ -25,3 +25,43 @@ other = "Sök"
 
 [noResults]
 other = "Inga resultat hittades"
+
+# Wishlist
+[wishlist_nerdy]
+other = "Nördigt"
+
+[wishlist_esp32]
+other = "ESP32 Projekt"
+
+[wishlist_smarthome]
+other = "Smarta Hem"
+
+[wishlist_smarthome_sensors]
+other = "Sensorer"
+
+[wishlist_smarthome_switches]
+other = "Strömbrytare och Styrning"
+
+[wishlist_homelab]
+other = "Hemmalabb"
+
+[wishlist_homelab_power]
+other = "Ström"
+
+[wishlist_security]
+other = "Säkerhet och Hacking"
+
+[wishlist_reading]
+other = "Läsning"
+
+[wishlist_reading_learning]
+other = "Lärplattformar"
+
+[wishlist_retailers]
+other = "Var man köper"
+
+[wishlist_price_approx]
+other = "ca"
+
+[wishlist_price_per_year]
+other = "/år"

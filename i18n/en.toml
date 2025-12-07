@@ -25,3 +25,43 @@ other = "Search"
 
 [noResults]
 other = "No results found"
+
+# Wishlist
+[wishlist_nerdy]
+other = "The nerdy stuff"
+
+[wishlist_esp32]
+other = "ESP32 Projects"
+
+[wishlist_smarthome]
+other = "Smart Home"
+
+[wishlist_smarthome_sensors]
+other = "Sensors"
+
+[wishlist_smarthome_switches]
+other = "Switches and Control"
+
+[wishlist_homelab]
+other = "Homelab"
+
+[wishlist_homelab_power]
+other = "Power"
+
+[wishlist_security]
+other = "Security and Hacking"
+
+[wishlist_reading]
+other = "Reading"
+
+[wishlist_reading_learning]
+other = "Learning Platforms"
+
+[wishlist_retailers]
+other = "Where to Buy"
+
+[wishlist_price_approx]
+other = "approx"
+
+[wishlist_price_per_year]
+other = "/year"
