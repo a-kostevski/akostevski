@@ -65,3 +65,139 @@ other = "ca"
 
 [wishlist_price_per_year]
 other = "/år"
+
+[wishlist_top_pick]
+other = "toppval"
+
+[wishlist_charity]
+other = "Välgörenhet"
+
+# Zettelkasten / Kunskapsgraf
+[relatedNotes]
+other = "Relaterade Anteckningar"
+
+[randomNote]
+other = "Slumpmässig Anteckning"
+
+[orphanNotes]
+other = "Ensamma Anteckningar"
+
+[orphansDescription]
+other = "Anteckningar utan inkommande länkar - frånkopplade från kunskapsgrafen."
+
+[orphanNotesCount]
+other = "ensamma anteckningar hittades"
+
+[orphanNotesHelp]
+other = "Länka dessa anteckningar från annat innehåll för att integrera dem i din kunskapsgraf."
+
+[noOrphans]
+other = "Inga ensamma anteckningar hittades!"
+
+[noOrphansDescription]
+other = "Alla dina anteckningar är kopplade till kunskapsgrafen."
+
+[linkSyntax]
+other = "Länksyntax"
+
+[noteTypes]
+other = "Anteckningstyper"
+
+[noteTypesDescription]
+other = "Bläddra bland anteckningar efter typ i zettelkasten-systemet"
+
+[noteType_fleeting]
+other = "Flyktig Anteckning"
+
+[noteType_literature]
+other = "Litteraturanteckning"
+
+[noteType_permanent]
+other = "Permanent Anteckning"
+
+[noteType_moc]
+other = "Innehållskarta"
+
+[fleetingDescription]
+other = "Snabba tankar och idéer att bearbeta senare. Dessa är råa tankar som inte har förfinats ännu."
+
+[literatureDescription]
+other = "Anteckningar från läsning, kurser och externa källor. Inkluderar alltid en referens till originalkällan."
+
+[permanentDescription]
+other = "Förfinade, atomära idéer skrivna med egna ord. Dessa utgör kärnan i kunskapsbasen."
+
+[mocDescription]
+other = "Innehållskartor är indexsidor som organiserar och länkar relaterade anteckningar om ett ämne."
+
+[untypedNotes]
+other = "Övriga Anteckningar"
+
+[linkedNotes]
+other = "Länkade Anteckningar"
+
+[connectionGraph]
+other = "Kopplingar"
+
+[graphView]
+other = "Grafvy"
+
+[sections]
+other = "Sektioner"
+
+[links]
+other = "Länkar"
+
+[directLinks]
+other = "Direkta"
+
+[tagLinks]
+other = "Taggar"
+
+[directLink]
+other = "Direkt wikilänk"
+
+[sharedTag]
+other = "Delad tagg"
+
+[viewPage]
+other = "Visa Sida"
+
+[reset]
+other = "Återställ"
+
+[notes]
+other = "anteckningar"
+
+[articles]
+other = "Artiklar"
+
+[homelab]
+other = "Hemmalabb"
+
+[projects]
+other = "Projekt"
+
+[today]
+other = "Idag"
+
+[noTodayNote]
+other = "Ingen anteckning för idag"
+
+[noPreviousDay]
+other = "Ingen föregående"
+
+[noNextDay]
+other = "Ingen nästa"
+
+[transcludedFrom]
+other = "Inkluderad från"
+
+[transcludeError]
+other = "Inkluderingsfel"
+
+[pageNotFound]
+other = "Sidan hittades inte"
+
+[searchPlaceholder]
+other = "Sök anteckningar..."

@@ -178,6 +178,7 @@ categories:
         url: https://www.elgiganten.se/product/mobiler-tablets-smartklockor/lasplatta/kobo-clara-bw-lasplatta-16gb-svart/767065
         price: 2000
         featured: true
+        order: 1
         desc_en: Works with Calibre, no Amazon lock-in. This is what I actually want.
         desc_sv: Fungerar med Calibre.
 
@@ -211,6 +212,61 @@ categories:
             recurring: year
             desc_en: Expensive but includes OSCP prep
             desc_sv: Dyrt men inkluderar OSCP-förberedelse
+
+  - id: charity
+    intro_en: "If you don't know what to get, a donation to a good cause is always appreciated:"
+    intro_sv: "Om du inte vet vad du ska ge, uppskattas en donation till en god sak alltid:"
+    items:
+      - name: Barncancerfonden
+        url: https://www.barncancerfonden.se/stod-oss/ge-en-gava/
+        desc_en: Fighting childhood cancer in Sweden
+        desc_sv: Bekämpar barncancer i Sverige
+
+      - name: Röda Korset
+        name_sv: Röda Korset
+        url: https://www.rodakorset.se/stod-oss/ge-en-gava/
+        desc_en: Swedish Red Cross - humanitarian aid worldwide
+        desc_sv: Humanitärt bistånd världen över
+
+      - name: Läkare Utan Gränser
+        url: https://lakareutangranser.se/stod-oss/ge-en-gava
+        desc_en: Doctors Without Borders - medical aid in conflict zones
+        desc_sv: Medicinsk hjälp i konfliktområden
+
+      - name: UNHCR Sverige
+        url: https://www.unhcr.org/se/donera
+        desc_en: UN Refugee Agency - helping displaced people
+        desc_sv: FN:s flyktingkommissariat - hjälper fördrivna människor
+
+      - name: Rädda Barnen
+        url: https://www.raddabarnen.se/stod-oss/ge-en-gava/
+        desc_en: Save the Children Sweden
+        desc_sv: Arbetar för barns rättigheter
+
+      - name: Cancerfonden
+        url: https://www.cancerfonden.se/stod-oss
+        desc_en: Swedish Cancer Society - research and support
+        desc_sv: Cancerforskning och stöd
+
+      - name: Hjärt-Lungfonden
+        url: https://www.hjart-lungfonden.se/stod-oss/ge-gava/
+        desc_en: Heart-Lung Foundation - cardiovascular research
+        desc_sv: Forskning om hjärt- och lungsjukdomar
+
+      - name: Stadsmissionen
+        url: https://www.stadsmissionen.se/stod-oss
+        desc_en: Helping homeless and vulnerable people in Swedish cities
+        desc_sv: Hjälper hemlösa och utsatta i svenska städer
+
+      - name: WWF Sverige
+        url: https://www.wwf.se/stod-oss/ge-en-gava/
+        desc_en: World Wildlife Fund - nature conservation
+        desc_sv: Naturvård och biologisk mångfald
+
+      - name: Naturskyddsföreningen
+        url: https://www.naturskyddsforeningen.se/stod-oss/ge-en-gava/
+        desc_en: Swedish Society for Nature Conservation
+        desc_sv: Sveriges största miljöorganisation
 
 retailers_intro_en: "Most of this stuff is available at:"
 retailers_intro_sv: "Det mesta av detta finns hos:"

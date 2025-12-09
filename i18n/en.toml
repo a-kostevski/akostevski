@@ -65,3 +65,139 @@ other = "approx"
 
 [wishlist_price_per_year]
 other = "/year"
+
+[wishlist_top_pick]
+other = "top pick"
+
+[wishlist_charity]
+other = "Charity"
+
+# Zettelkasten / Knowledge Graph
+[relatedNotes]
+other = "Related Notes"
+
+[randomNote]
+other = "Random Note"
+
+[orphanNotes]
+other = "Orphan Notes"
+
+[orphansDescription]
+other = "Notes with no incoming links - disconnected from the knowledge graph."
+
+[orphanNotesCount]
+other = "orphan notes found"
+
+[orphanNotesHelp]
+other = "Link these notes from other content to integrate them into your knowledge graph."
+
+[noOrphans]
+other = "No orphan notes found!"
+
+[noOrphansDescription]
+other = "All your notes are connected to the knowledge graph."
+
+[linkSyntax]
+other = "Link syntax"
+
+[noteTypes]
+other = "Note Types"
+
+[noteTypesDescription]
+other = "Browse notes by their type in the zettelkasten system"
+
+[noteType_fleeting]
+other = "Fleeting Note"
+
+[noteType_literature]
+other = "Literature Note"
+
+[noteType_permanent]
+other = "Permanent Note"
+
+[noteType_moc]
+other = "Map of Content"
+
+[fleetingDescription]
+other = "Quick captures and ideas to process later. These are raw thoughts that haven't been refined yet."
+
+[literatureDescription]
+other = "Notes from reading, courses, and external sources. Always includes a reference to the original source."
+
+[permanentDescription]
+other = "Refined, atomic ideas written in your own words. These form the core of the knowledge base."
+
+[mocDescription]
+other = "Maps of Content are index pages that organize and link related notes on a topic."
+
+[untypedNotes]
+other = "Other Notes"
+
+[linkedNotes]
+other = "Linked Notes"
+
+[connectionGraph]
+other = "Connections"
+
+[graphView]
+other = "Graph View"
+
+[sections]
+other = "Sections"
+
+[links]
+other = "Links"
+
+[directLinks]
+other = "Direct"
+
+[tagLinks]
+other = "Tags"
+
+[directLink]
+other = "Direct wikilink"
+
+[sharedTag]
+other = "Shared tag"
+
+[viewPage]
+other = "View Page"
+
+[reset]
+other = "Reset"
+
+[notes]
+other = "notes"
+
+[articles]
+other = "Articles"
+
+[homelab]
+other = "Homelab"
+
+[projects]
+other = "Projects"
+
+[today]
+other = "Today"
+
+[noTodayNote]
+other = "No note for today"
+
+[noPreviousDay]
+other = "No previous"
+
+[noNextDay]
+other = "No next"
+
+[transcludedFrom]
+other = "Transcluded from"
+
+[transcludeError]
+other = "Transclusion error"
+
+[pageNotFound]
+other = "Page not found"
+
+[searchPlaceholder]
+other = "Search notes..."
